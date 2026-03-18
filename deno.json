@@ -1,0 +1,13 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v3.2.2/"
+  },
+  "tasks": {
+    "build": "deno run -A serve.ts",
+    "serve": "deno run -A serve.ts -s"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:preact"
+  }
+}

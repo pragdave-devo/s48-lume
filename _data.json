@@ -1,0 +1,25 @@
+{
+  "lang": "en",
+  "priority": 1.0,
+  "layout": "page.njk",
+  "metas": {
+    "title": "=title",
+    "site": "Strike48 Labs",
+    "logo": "/assets/img/strike48-logo-light.svg",
+    "lang": "en",
+    "description": "=description"
+  },
+  "nav_links": [
+    {
+      "icon": "fab fa-github",
+      "title": "GitHub",
+      "url": "https://github.com/strike48-public"
+    },
+    {
+      "icon": "fab fa-discord",
+      "title": "Discord",
+      "url": "https://discord.gg/J3mukDFzfq"
+    }
+  ],
+  "top_links": []
+}

@@ -1,0 +1,19 @@
+site_title: Strike48 Labs
+site_description: Documentation for the Strike48 security platform
+site_url: https://docs.strike48.com
+layout: layouts/docs.vto
+
+social:
+  github: https://github.com/strike48-public
+  discord: https://discord.gg/J3mukDFzfq
+
+author_info:
+  strike48:
+    name: Strike48
+    url: https://strike48.com
+    picture: /assets/img/strike48-logo-light.svg
+  pragdave:
+    name: pragdave
+    url: https://strike48.com
+    title: Dave Thomas
+    picture: https://avatars.githubusercontent.com/u/243179820?v=4
