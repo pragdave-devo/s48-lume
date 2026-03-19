@@ -238,6 +238,8 @@ sidebar:
                 url: /developers/sdk-rs/guides/async-patterns/
               - label: Deploying Connectors
                 url: /developers/sdk-rs/guides/deployment/
+      - label: Lab Notes
+        url: /blog/
   - label: "Contributing"
     collapsed: true
     items:

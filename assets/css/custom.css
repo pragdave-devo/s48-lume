@@ -20,7 +20,7 @@
   --color-border: #e2e8f0;
   --color-gray-3: #94a3b8;
   --color-gray-5: #334155;
-  --color-gray-6: #1e293b;
+  --color-gray-6: rgba(0, 0, 0, 0.06);
   --color-white: #0f172a;
 
   --content-width: 45rem;
@@ -221,6 +221,7 @@ img {
   cursor: pointer;
   list-style: none;
   padding: 0.2em 0.5rem;
+  border-inline-start: 3px solid transparent;
 }
 
 .sidebar details > summary::-webkit-details-marker {
