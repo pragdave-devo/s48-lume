@@ -1,8 +1,7 @@
 ---
 title: KubeStudio
 description: Kubernetes cluster browser and management tool for the Strike48 platform.
-nav_order: 1
-parent: "KubeStudio"
+nav_order: 5
 ---
 
 KubeStudio is a native desktop Kubernetes client built with Dioxus and Axum, providing a visual interface for browsing clusters, inspecting workloads, and managing deployments.

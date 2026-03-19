@@ -1,8 +1,7 @@
 ---
 title: StrikeHub
 description: The unified native desktop shell for Strike48 connector applications.
-nav_order: 1
-parent: "StrikeHub"
+nav_order: 4
 ---
 
 StrikeHub is a unified native desktop shell for Strike48 connector applications, built with Dioxus 0.6 and designed to host, manage, and render multiple connector apps within a single native window.

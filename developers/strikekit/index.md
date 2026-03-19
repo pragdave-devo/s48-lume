@@ -1,8 +1,7 @@
 ---
-title: "StrikeKit Documentation"
+title: "StrikeKit"
 description: "Welcome to the StrikeKit documentation. This guide will help you get started with using StrikeKit for red team operations."
-nav_order: 1
-parent: "StrikeKit"
+nav_order: 7
 ---
 
 ## Documentation Structure

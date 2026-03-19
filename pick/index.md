@@ -1,8 +1,7 @@
 ---
 title: Pick
 description: Headless penetration testing toolkit for the Strike48 platform.
-nav_order: 1
-parent: "Pick"
+nav_order: 6
 ---
 
 Pick is a lightweight, headless penetration testing agent built with Dioxus, providing network reconnaissance, device discovery, and remote tool execution capabilities.

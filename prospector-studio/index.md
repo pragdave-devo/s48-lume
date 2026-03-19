@@ -1,8 +1,7 @@
 ---
 title: Prospector Studio
 description: AI-powered workflow automation and agent platform.
-nav_order: 1
-parent: "Prospector Studio"
+nav_order: 3
 ---
 
 Prospector Studio is Strike48's AI-powered platform for building and managing autonomous agents, workflows, and knowledge bases. It serves as the backend orchestration layer that all Strike48 connector apps integrate with.

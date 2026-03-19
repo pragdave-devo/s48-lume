@@ -1,0 +1,65 @@
+<ul class="top-level">
+{{ for group of sidebar }}
+  <li>
+    <details {{ if group.collapsed === false }}open{{ /if }}>
+      <summary>
+        <span class="large">{{ group.label }}</span>
+        <svg class="caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </summary>
+      <ul>
+      {{ for item of group.items }}
+        {{ if item.items }}
+          <li>
+            <details {{ if item.collapsed === false }}open{{ /if }}>
+              <summary>
+                {{ if item.url }}<a href="{{ item.url }}"{{ if item.url == url }} aria-current="page"{{ /if }}>{{ item.label }}</a>{{ else }}<span class="large">{{ item.label }}</span>{{ /if }}
+                <svg class="caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <ul>
+              {{ for sub of item.items }}
+                {{ if sub.items }}
+                  <li>
+                    <details {{ if sub.collapsed === false }}open{{ /if }}>
+                      <summary>
+                        {{ if sub.url }}<a href="{{ sub.url }}"{{ if sub.url == url }} aria-current="page"{{ /if }}>{{ sub.label }}</a>{{ else }}<span class="large">{{ sub.label }}</span>{{ /if }}
+                        <svg class="caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                      </summary>
+                      <ul>
+                      {{ for sub2 of sub.items }}
+                        {{ if sub2.items }}
+                          <li>
+                            <details {{ if sub2.collapsed === false }}open{{ /if }}>
+                              <summary>
+                                {{ if sub2.url }}<a href="{{ sub2.url }}"{{ if sub2.url == url }} aria-current="page"{{ /if }}>{{ sub2.label }}</a>{{ else }}<span class="large">{{ sub2.label }}</span>{{ /if }}
+                                <svg class="caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                              </summary>
+                              <ul>
+                              {{ for sub3 of sub2.items }}
+                                <li><a href="{{ sub3.url }}"{{ if sub3.url == url }} aria-current="page"{{ /if }}>{{ sub3.label }}</a></li>
+                              {{ /for }}
+                              </ul>
+                            </details>
+                          </li>
+                        {{ else }}
+                          <li><a href="{{ sub2.url }}"{{ if sub2.url == url }} aria-current="page"{{ /if }}>{{ sub2.label }}</a></li>
+                        {{ /if }}
+                      {{ /for }}
+                      </ul>
+                    </details>
+                  </li>
+                {{ else }}
+                  <li><a href="{{ sub.url }}"{{ if sub.url == url }} aria-current="page"{{ /if }}>{{ sub.label }}</a></li>
+                {{ /if }}
+              {{ /for }}
+              </ul>
+            </details>
+          </li>
+        {{ else }}
+          <li><a href="{{ item.url }}"{{ if item.url == url }} aria-current="page"{{ /if }}>{{ item.label }}</a></li>
+        {{ /if }}
+      {{ /for }}
+      </ul>
+    </details>
+  </li>
+{{ /for }}
+</ul>

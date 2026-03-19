@@ -2,6 +2,260 @@ site_title: Strike48 Labs
 site_description: Documentation for the Strike48 security platform
 site_url: https://docs.strike48.com
 layout: layouts/docs.vto
+metas:
+  site: Strike48 Labs
+  logo: /assets/img/strike48-logo.svg
+  icon: /assets/img/strike48-logo.svg
+
+nav_links:
+  - title: GitHub
+    url: https://github.com/strike48-public
+  - title: Discord
+    url: https://discord.gg/J3mukDFzfq
+
+sidebar:
+  - label: "Overview"
+    items:
+      - label: Welcome
+        url: /overview/
+      - label: Architecture
+        url: /architecture/
+  - label: "For Users"
+    collapsed: false
+    items:
+      - label: Prospector Studio
+        collapsed: true
+        items:
+          - label: Overview
+            url: /prospector-studio/
+          - label: User Guide
+            collapsed: true
+            items:
+              - label: Getting Started
+                url: /prospector-studio/getting-started/
+          - label: Features
+            collapsed: true
+            items:
+              - label: Chat Interface
+                url: /prospector-studio/guides/chat-interface/
+              - label: Agents
+                url: /prospector-studio/guides/agents/
+              - label: Knowledge Bases
+                url: /prospector-studio/guides/knowledge-bases/
+              - label: Workflows
+                url: /prospector-studio/guides/workflows/
+              - label: MCP Servers
+                url: /prospector-studio/guides/mcp-servers/
+              - label: Connectors
+                url: /prospector-studio/guides/connectors/
+      - label: StrikeHub
+        collapsed: true
+        items:
+          - label: Overview
+            url: /strikehub/
+          - label: User Guide
+            collapsed: true
+            items:
+              - label: Getting Started
+                url: /strikehub/getting-started/
+              - label: Installation
+                url: /strikehub/guides/installation/
+              - label: Configuration
+                url: /strikehub/guides/configuration/
+              - label: Custom Site URL
+                url: /strikehub/guides/custom-site-url/
+          - label: Features
+            collapsed: true
+            items:
+              - label: Connectors
+                url: /strikehub/guides/connectors/
+          - label: Help
+            collapsed: true
+            items:
+              - label: Debug Logging
+                url: /strikehub/help/debugging/
+              - label: Connectivity
+                url: /strikehub/help/connectivity/
+              - label: Authentication
+                url: /strikehub/help/authentication/
+              - label: "UI & Rendering"
+                url: /strikehub/help/ui-rendering/
+      - label: KubeStudio
+        collapsed: true
+        items:
+          - label: Overview
+            url: /kubestudio/
+          - label: User Guide
+            collapsed: true
+            items:
+              - label: Getting Started
+                url: /kubestudio/getting-started/
+              - label: Installation
+                url: /kubestudio/guides/installation/
+              - label: Helm Chart
+                url: /kubestudio/guides/helm/
+          - label: Features
+            collapsed: true
+            items:
+              - label: Cluster Management
+                url: /kubestudio/guides/cluster-management/
+              - label: Deployments
+                url: /kubestudio/guides/deployments/
+          - label: Help
+            collapsed: true
+            items:
+              - label: Debug Logging
+                url: /kubestudio/help/debugging/
+              - label: Cluster Connectivity
+                url: /kubestudio/help/cluster-connectivity/
+              - label: "Permissions & RBAC"
+                url: /kubestudio/help/permissions/
+              - label: Workload Issues
+                url: /kubestudio/help/workload-issues/
+      - label: Pick
+        collapsed: true
+        items:
+          - label: Overview
+            url: /pick/
+          - label: User Guide
+            collapsed: true
+            items:
+              - label: Getting Started
+                url: /pick/getting-started/
+              - label: Architecture
+                url: /pick/architecture/
+              - label: Installation
+                url: /pick/getting-started/installation/
+              - label: Helm Chart
+                url: /pick/getting-started/helm/
+              - label: Configuration
+                url: /pick/getting-started/configuration/
+          - label: Features
+            collapsed: true
+            items:
+              - label: Tools
+                url: /pick/guides/marketplace/
+          - label: Help
+            collapsed: true
+            items:
+              - label: Debug Logging
+                url: /pick/help/debugging/
+              - label: Privileges
+                url: /pick/help/privileges/
+              - label: Network Tools
+                url: /pick/help/network-tools/
+              - label: Remote Execution
+                url: /pick/help/remote-execution/
+      - label: StrikeKit
+        collapsed: true
+        items:
+          - label: Overview
+            url: /developers/strikekit/
+          - label: User Guide
+            collapsed: true
+            items:
+              - label: Getting Started
+                url: /developers/strikekit/user-guide/getting-started/
+              - label: Quick Start
+                url: /developers/strikekit/user-guide/quick-start/
+              - label: Interface Overview
+                url: /developers/strikekit/user-guide/interface-overview/
+              - label: Workflow
+                url: /developers/strikekit/user-guide/workflow/
+          - label: Features
+            collapsed: true
+            items:
+              - label: Engagements
+                url: /developers/strikekit/features/engagements/
+              - label: Planning
+                url: /developers/strikekit/features/planning/
+              - label: Execution
+                url: /developers/strikekit/features/execution/
+              - label: Objectives
+                url: /developers/strikekit/features/objectives/
+              - label: Targets
+                url: /developers/strikekit/features/targets/
+              - label: Credentials
+                url: /developers/strikekit/features/credentials/
+              - label: Evidence
+                url: /developers/strikekit/features/evidence/
+              - label: Findings
+                url: /developers/strikekit/features/findings/
+              - label: Kill Chain
+                url: /developers/strikekit/features/kill-chain/
+              - label: "MITRE ATT&CK"
+                url: /developers/strikekit/features/mitre-attack/
+              - label: Timeline
+                url: /developers/strikekit/features/timeline/
+              - label: Network Topology
+                url: /developers/strikekit/features/network-topology/
+              - label: C2
+                url: /developers/strikekit/features/c2/
+              - label: Reports
+                url: /developers/strikekit/features/reports/
+              - label: Notes
+                url: /developers/strikekit/features/notes/
+              - label: Checklists
+                url: /developers/strikekit/features/checklists/
+              - label: Assistant
+                url: /developers/strikekit/features/assistant/
+          - label: Tutorials
+            collapsed: true
+            items:
+              - label: Overview
+                url: /developers/strikekit/tutorials/
+              - label: Creating Your First Engagement
+                url: /developers/strikekit/tutorials/creating-your-first-engagement/
+  - label: "For Developers"
+    collapsed: false
+    items:
+      - label: Prospector Studio
+        collapsed: true
+        items:
+          - label: GraphQL API
+            url: /developers/prospector-studio/graphql-api/
+      - label: SDK for Rust
+        collapsed: true
+        items:
+          - label: Overview
+            url: /developers/sdk-rs/
+          - label: Installation
+            url: /developers/sdk-rs/installation/
+          - label: Quick Start
+            url: /developers/sdk-rs/quick-start/
+          - label: Configuration
+            url: /developers/sdk-rs/configuration/
+          - label: Guides
+            collapsed: true
+            items:
+              - label: Building Your First Connector
+                url: /developers/sdk-rs/guides/building-your-first-connector/
+              - label: Testing Connectors
+                url: /developers/sdk-rs/guides/testing-connectors/
+              - label: Error Handling
+                url: /developers/sdk-rs/guides/error-handling/
+              - label: Async Patterns with Tokio
+                url: /developers/sdk-rs/guides/async-patterns/
+              - label: Deploying Connectors
+                url: /developers/sdk-rs/guides/deployment/
+  - label: "Contributing"
+    collapsed: true
+    items:
+      - label: GIF Guidelines
+        url: /contributing/gif-guidelines/
+      - label: GIF Workflow
+        url: /contributing/gif-workflow/
+      - label: VHS Examples
+        url: /contributing/vhs-examples/
+  - label: "Legal"
+    collapsed: true
+    items:
+      - label: Developing with Us
+        url: /legal/developing-with-us/
+      - label: Privacy Policy
+        url: /legal/privacy-policy/
+      - label: Terms of Use
+        url: /legal/terms-of-use/
 
 social:
   github: https://github.com/strike48-public

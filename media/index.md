@@ -2,8 +2,7 @@
 title: Demos & Media
 description: Video walkthroughs, GIFs, and demos of the Strike48 platform.
 draft: true
-nav_order: 1
-parent: "Media"
+nav_order: 11
 ---
 
 All Strike48 demos in one place. Most recordings are still in production — cards marked **Coming Soon** will be updated as assets become available. Demos are also shown on each product's overview page.

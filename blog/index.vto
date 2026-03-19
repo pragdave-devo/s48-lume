@@ -1,0 +1,36 @@
+---
+title: Blog
+description: Product updates, engineering insights, and guides from the Strike48 team.
+nav_order: 13
+type: blog-index
+---
+
+<p>Product updates, engineering insights, and guides from the Strike48 team.</p>
+
+{{ set posts = search.pages("type=blog", "date=desc") }}
+
+{{ for post of posts }}
+{{ if post.url != url }}
+<article style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border, #e0e0e0);">
+  <h2 style="margin-bottom: 0.25rem;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p style="margin: 0.25rem 0; opacity: 0.7; font-size: 0.9em; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+    {{ if post.date }}{{ set pd = (post.date instanceof Date) ? post.date : new Date(post.date) }}<time datetime="{{ pd.toISOString().split('T')[0] }}">{{ pd.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" }) }}</time>{{ /if }}
+    {{ if post.authors }}
+      <span style="opacity:0.5">&middot;</span>
+      {{ for author_id of post.authors }}
+        {{ set author = author_info[author_id] }}
+        {{ if author }}
+          <span style="display:inline-flex;align-items:center;gap:0.35rem;">
+            {{ if author.picture }}<img src="{{ author.picture }}" alt="{{ author.title || author.name }}" style="width:1.5rem;height:1.5rem;border-radius:50%;">{{ /if }}
+            {{ author.title || author.name }}
+          </span>
+        {{ else }}{{ author_id }}{{ /if }}
+      {{ /for }}
+    {{ /if }}
+  </p>
+  {{ if post.excerpt }}
+  <p>{{ post.excerpt }}</p>
+  {{ /if }}
+</article>
+{{ /if }}
+{{ /for }}
