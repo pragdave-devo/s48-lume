@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import relativeUrls from "lume/plugins/relative_urls.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import pagefind from "lume/plugins/pagefind.ts";
@@ -13,6 +14,7 @@ const site = lume({
   location: new URL("https://docs.strike48.com"),
 });
 
+site.use(relativeUrls());
 site.use(nunjucks());
 site.hooks.addMarkdownItPlugin(anchor, {
   permalink: anchor.permalink.headerLink({ class: "header-anchor" }),
