@@ -503,7 +503,10 @@ img {
   transition: opacity 0.2s ease;
 }
 
-/* Picjs diagrams */
+/* Picjs diagrams — invert for dark mode */
+:root[data-theme="dark"] .picjs-diagram svg {
+  filter: invert(1) hue-rotate(180deg);
+}
 
 .picjs-example {
   display: flex;
